@@ -67,13 +67,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/
 ```
 
 #### Response body
 
 ```
-
+{"flip":"tails"}
 ```
 
 #### Response headers
@@ -87,13 +87,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flips/5/
 ```
 
 #### Response body
 
 ```
-
+{"raw":["heads","tails","heads","heads","tails"],"summary":{"heads":3,"tails":2}}
 ```
 
 #### Response headers
@@ -107,13 +107,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/coin/
 ```
 
 #### Response body
 
 ```
-
+{"flip":"heads"}
 ```
 
 #### Response headers
@@ -127,13 +127,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/call/tails/
 ```
 
 #### Response body
 
 ```
-
+{"call":"tails","flip":"tails","result":"win"}
 ```
 
 #### Response headers
